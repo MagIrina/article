@@ -1,0 +1,110 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #709FDC;
+  width: 727px;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 95px;
+    width: 406px;
+    color: #709FDC;
+    text-align: center;
+    font-family: 'Lora', sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  form {
+    text-align: center;
+    input {
+      width: 422px;
+      margin-bottom: 5px;
+      color: #709FDC;
+
+      &::placeholder {
+        color: #A8ABA7;
+      }
+    }
+  }
+
+  .error {
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .button-footer-modal {
+    text-align: center;
+    width: 422px;
+    margin-top: 15px;
+    margin-bottom: 94px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border-radius: 5px;
+    background: #709FDC;
+    cursor: pointer;
+
+    &:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  .modal-thank-you-title {
+    padding-top: 163px;
+    width: 443px;
+  }
+
+  .modal-thank-you--text {
+    color: #1E1A2B;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .modal-thank-you-button {
+    width: 73px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #709FDC;
+    margin-bottom: 163px;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+}

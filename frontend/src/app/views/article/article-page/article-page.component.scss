@@ -1,0 +1,344 @@
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/variables";
+
+.article-page {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  .container {
+    padding-right: 14px;
+
+    .article-blog-title {
+      color: #B9D5FD;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 60px;
+
+      p {
+        display: inline-block;
+        margin: 0 8px;
+        color: #B9D5FD;
+        font-family: 'SuisseIntl', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      span {
+        display: inline-block;
+        color: $aqua-text-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .article-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .article-content-top {
+        display: flex;
+
+        .article-content-top-title {
+          width: 607px;
+          margin: 0 106px 40px 0;
+          @include head-lora-38-aqua-400;
+
+          p {
+            width: 607px;
+            color: $aqua-text-color;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 130%;
+            margin-bottom: 112px;
+          }
+        }
+
+        .article-image {
+          width: 527px;
+          height: 320px;
+          flex-shrink: 0;
+          border-radius: 5px;
+          margin-bottom: 60px;
+          margin-right: 14px;
+        }
+
+      }
+
+      .article-content-bottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .article-content-bottom-box {
+          width: 818px;
+
+          ::ng-deep .article-content-bottom-text {
+
+            h1 {
+              display: none;
+            }
+
+            h3 {
+              color: #709FDC;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 20px;
+              font-weight: 500;
+              padding-top: 20px;
+            }
+
+            h1 + p {
+              display: none;
+            }
+
+            p {
+              width: 818px;
+              color: $blue-text-color;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 130%;
+              margin-bottom: 20px;
+
+              b {
+                font-weight: 500;
+              }
+            }
+
+            li {
+              color: $blue-text-color;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 130%;
+            }
+          }
+
+          .share-block {
+            padding-top: 60px;
+            display: flex;
+            gap: 13px;
+
+            span {
+              margin-right: 7px;
+              color: #709FDC;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+            }
+
+            button {
+              all: unset;
+              cursor: pointer;
+            }
+          }
+
+          .article-content-bottom-comments {
+            padding-top: 60px;
+
+            .article-content-bottom-comments-title {
+              @include head-lora-38-aqua-400;
+              margin-bottom: 20px;
+            }
+
+            .article-content-bottom-comments-login-on {
+              color: $blue-text-color;
+              font-family: 'Montserrat', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              margin-bottom: 60px;
+
+              a {
+                color: $aqua-text-color;
+                text-decoration: none;
+                cursor: pointer;
+              }
+            }
+
+            .article-content-bottom-comments-write {
+              padding-top: 20px;
+
+              .comment-be-the-first {
+                color: $blue-text-color;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: -20px;
+                margin-bottom: 40px;
+              }
+
+              .comment-textarea {
+                width: 784px;
+                height: 208px;
+                padding: 20px;
+                border-radius: 3px;
+                border: 2px solid #709FDC;
+                background: #FFF;
+                margin-bottom: 20px;
+
+                &::placeholder {
+                  color: #A8ABA7;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                }
+              }
+
+              .button-comment {
+                width: 422px;
+                padding: 15px 40px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 5px;
+                background: #709FDC;
+                margin-bottom: 60px;
+
+                color: #FFF;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+              }
+
+            }
+
+            .article-content-bottom-comments-zero {
+              color: $violet-text-color;
+              font-family: 'SuisseIntl', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+            }
+
+            .article-content-bottom-comments-comment-item {
+              width: 854px;
+              margin-bottom: 40px;
+
+              .comment-item-top {
+                display: flex;
+                margin-bottom: 15px;
+
+                .comment-item-image {
+                  svg {
+                    background-color: #B9D5FD;
+                    background-repeat: no-repeat;
+                    border: 2px solid #709FDC;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                  }
+                }
+
+                .comment-item-name {
+                  margin-left: 26px;
+                  color: $aqua-text-color;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 18px;
+                  font-weight: 600;
+
+                  p {
+                    color: #BEBEBE;
+                    font-size: 14px;
+                    font-weight: 600;
+                  }
+                }
+              }
+
+              .comment-item-bottom {
+
+                .comment-item-text {
+                  color: $blue-text-color;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 140%;
+                  margin-bottom: 39px;
+                }
+
+                .comment-actions {
+                    display: flex;
+                  .button-comment-actions {
+                    border: none;
+                    background-color: transparent;
+                    color: inherit;
+                    text-decoration: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    p {
+                      color: $blue-text-color;
+                      font-size: 14px;
+                      font-weight: 600;
+                      margin-right: 3px;
+                    }
+                    svg {
+                      margin-right: 15px;
+                    }
+                  }
+
+                  .button-comment-actions.active {
+                    p{
+                      color: $aqua-text-color;
+                    }
+                    svg path {
+                      stroke: #709FDC;
+                      stroke-width: 2;
+                    }
+                  }
+                }
+              }
+
+            }
+
+            .article-content-bottom-load-more {
+
+              .button-load-more {
+                border: none;
+                padding: 20px 0;
+                background-color: transparent;
+                text-decoration: none;
+                outline: none;
+                color: $aqua-text-color;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                svg {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+
+        .related-articles {
+          width: 292px;
+          margin-top: 60px;
+
+          h3 {
+            @include head-lora-aqua-400;
+            margin-bottom: 20px;
+            font-size: 26px;
+          }
+
+          .related-articles-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .related-articles-item {
+              margin-bottom: 60px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+

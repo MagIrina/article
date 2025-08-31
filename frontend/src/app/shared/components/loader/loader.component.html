@@ -1,0 +1,63 @@
+<div *ngIf="loaderService.isLoading$ | async" class="loader-overlay">
+  <svg class="spinner" [ngClass]="size" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 50 50"
+       overflow="visible" fill="#051B7E" stroke="#051B7E">
+    <defs>
+      <rect id="loader" x="46.5" y="40" width="7" height="23" rx="5" ry="5" transform="translate(0 -30)"/>
+    </defs>
+    <g class="loader" transform="rotate(45 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(90 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(135 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(180 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(225 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(270 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(315 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+    <g class="loader" transform="rotate(360 50 50)">
+      <use xlink:href="#loader"/>
+    </g>
+  </svg>
+</div>
+
+<svg *ngIf="type === 'button'" class="spinner" [ngClass]="size" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 50 50"
+     overflow="visible" fill="#051B7E" stroke="#051B7E">
+  <defs>
+    <rect id="loader" x="46.5" y="40" width="7" height="23" rx="5" ry="5" transform="translate(0 -30)"/>
+  </defs>
+  <g class="loader" transform="rotate(45 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(90 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(135 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(180 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(225 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(270 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(315 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+  <g class="loader" transform="rotate(360 50 50)">
+    <use xlink:href="#loader"/>
+  </g>
+</svg>

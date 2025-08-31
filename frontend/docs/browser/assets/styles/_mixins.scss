@@ -1,0 +1,38 @@
+@import "variables";
+
+@mixin head-lora-32 {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: $blue-text-color;
+}
+
+@mixin head-lora-36 {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: $aqua-text-color;
+  margin-bottom: 40px;
+}
+
+@mixin head-lora-38-aqua-400 {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  color: $aqua-text-color;
+  font-size: 38px;
+  font-style: normal;
+}
+
+@mixin head-lora-aqua-500 {
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  color: $aqua-text-color;
+  font-style: normal;
+}
+
+@mixin head-lora-aqua-400 {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  color: $aqua-text-color;
+  font-style: normal;
+}

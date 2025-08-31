@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/variables";
+
+.policy-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+
+  h1 {
+    @include head-lora-36;
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  h2 {
+    @include head-lora-32;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  p {
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    span {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      margin-right: 5px;
+      color: $aqua-text-color;
+      margin-bottom: 8px;
+    }
+  }
+}
