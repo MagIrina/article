@@ -1,0 +1,57 @@
+@import "variables";
+@import "fonts";
+
+hyml, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.input {
+  box-sizing: border-box;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid $aqua-text-color;
+  padding: 15px 20px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #A8ABA7;
+}
+
+.button {
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px;
+  background: $aqua-button-color;
+  cursor: pointer;
+  border: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFF;
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+
+}
+
+.field-error {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.toggle-pass {
+  font-size: 12px;
+}
